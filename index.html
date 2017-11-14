@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar Layouting</title>
+		<style type="text/css">
+			.wrapper {
+				width: 940px;
+				margin: 20px auto 20px auto;
+				border: 2px solid #00000;
+				background-color: #ffffff;
+			}
+
+			.logo {
+				float: left;
+				width: 200px;
+			}
+
+			.nav {
+				float: left;
+				width: 730px;
+				padding: 30px 0px 0px 5px;
+			}
+
+			.logo img{
+				float: left;
+				width: 140px;
+				padding: 5px;
+			}
+
+			header nav {
+				float: left;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 40px;
+				width: 100%;
+			}
+
+			nav ul {
+				margin: 0px;
+				padding: 10px 0px 5px 30px;
+			}
+
+			nav li {
+				display: inline;
+				margin-right: 40px;
+			}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current{
+				color: #000000;
+			}
+
+			.banner img {
+				float: left;
+				width: 100%;
+				height: 200px;
+				margin-top: 20px;
+			}
+
+			a {
+				color: #de6581;
+				text-decoration: none;
+			}
+
+			article {
+				clear: both;
+				width: 100%;
+				padding: 5px 0px 0px 0px;
+			}
+
+			section.courses {
+				float: left;
+				width: 640px;
+			}
+
+			aside {
+				float: left;
+				width: 270px;
+				padding: 20px 0px 0px 20px;
+			}
+
+			.form-group{
+				width: 100%;
+			}
+			
+			input{
+				width: 200px;
+			    padding: 15px;
+			    margin: 10px 0;
+			    color: #888;
+			}
+
+			button{
+			    width: 100%;
+			    padding: 15px;
+			    margin: 10px 0;
+			    color: #888;
+			    background-color:#00cdb1 ;
+			    border: none;
+			    color:#eee;
+			}
+
+			button:hover{
+			    background-color: #00adb1;
+			}
+
+			footer {
+				float: left;
+				clear: both;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 40px;
+				width: 100%;
+				text-align: center;
+				padding: 20px 0px 0px 0px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--Wrapper-->
+		<div class="wrapper">
+			<!-- Header-->
+			<header>
+				<!-- LOGO -->
+				<div class="logo">
+						<img src="images/logo.png">
+				</div>
+				<!-- END LOGO -->	
+				<div class="nav">
+					<!-- NAV BAR -->
+					<nav>
+						<ul>
+							<li><a href="" class="current">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Berita</a></li>
+							<li><a href="">Kontak</a></li>
+						</ul>
+					</nav>
+					<!-- END NAV BAR -->
+				</div>
+			</header>
+			<!-- End Header-->
+
+			<!--Section Banner -->
+			<section class="banner">
+				<img src="images/banner.png">
+			</section>
+			<!-- End Section Banner -->
+
+			<!-- Content -->
+			<div class="content">
+				<section class="courses">
+					<!-- Articles -->
+					<article>
+						<div class="article">		
+							<h2><a href="">Judul Berita Pertama</a></h2>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur porta velit, ac hendrerit augue rutrum convallis. Pellentesque arcu dui, molestie vehicula elit at, suscipit efficitur augue. Curabitur vitae tortor gravida diam tempor tristique vitae quis risus. Vestibulum et convallis erat. Phasellus ut libero consequat arcu cursus aliquet
+							</p>
+						</div>
+					</article>
+					<article>
+						<div class="article">		
+							<h2><a href="">Judul Berita Kedua</a></h2>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur porta velit, ac hendrerit augue rutrum convallis. Pellentesque arcu dui, molestie vehicula elit at, suscipit efficitur augue. Curabitur vitae tortor gravida diam tempor tristique vitae quis risus. Vestibulum et convallis erat. Phasellus ut libero consequat arcu cursus aliquet
+							</p>
+						</div>
+					</article>
+					<!-- End Articles -->
+				</section>
+
+				<!-- Sidebar-->
+				<aside>
+					<fieldset>
+						<legend>Form Login</legend>
+						<form method="POST" action="#">
+							<div class="form-group">
+								<label>Username</label>
+								<input type="text" name="username" placeholder="Username .."></input>
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password" name="password" placeholder="Password .."></input>
+							</div>
+							<div class="form-group">
+								<button class="btn-login">LOGIN</button>
+							</div>
+						</form>
+					</fieldset>
+				</aside>
+				<!-- END Sidebar-->
+
+			</div>
+			<!-- End Content -->
+
+			<!-- Footer -->
+			<footer>
+				Copyright &copy; IF 2017
+			</footer>
+			<!-- End Footer -->
+
+		</div>
+		<!-- End Wrapper-->
+	</body>
+</html>
